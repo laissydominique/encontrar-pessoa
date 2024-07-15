@@ -32,21 +32,27 @@ async function teste() {
 </script>
 
 <template>
-  <input  v-model="info.id" type="text" placeholder="Digite ID aqui" />
-  <button @click="teste"></button>
+    <div class="container">    
+      <h1>Busque pessoas pelo ID</h1>
 
+    <div class="input">
+  <input  v-model="info.id" type="text" placeholder="Digite ID aqui" /> </div>
+  <div class="botao">
+  <button @click="teste"> Consultar </button>
+</div>
+<div class="infos"> 
   <p class="nome">{{ info.dados.nome }}</p>
   <p class="email">{{ info.dados.email }}</p>
   <p class="user">{{ info.dados.user }}</p>
   <p class="trabalho">{{ info.dados.trabalho }}</p>
   <p class="cidade">{{ info.dados.cidade }}</p>
-
-
-  
-
+  <div class="erro"> 
   <p v-if="info.erro" class="erro">Id não encontrado</p>
-</template>
+</div>
+</div>
 
+</div>
+</template>
 <style scoped>
 
 </style>
