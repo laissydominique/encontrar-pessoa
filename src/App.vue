@@ -33,12 +33,14 @@ async function teste() {
 
 <template>
     <div class="container">    
+      <div class="inputs"> 
       <h1>Busque pessoas pelo ID</h1>
 
     <div class="input">
-  <input  v-model="info.id" type="text" placeholder="Digite ID aqui" /> </div>
+  <input  v-model="info.id" type="text" placeholder="Digite o ID aqui" /> </div>
   <div class="botao">
   <button @click="teste"> Consultar </button>
+</div>
 </div>
 <div class="infos"> 
   <p class="nome">{{ info.dados.nome }}</p>
